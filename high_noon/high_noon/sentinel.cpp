@@ -1,7 +1,6 @@
 #include "sentinel.h"
 
-bool Sentinel::attack(int enemy_value, string enemy_suit)
-{
+bool Sentinel::attack(int enemy_value, string enemy_suit){
 	if (enemy_suit == "Assassin") {
 		alive = false;//sentinel card automatically loses against assassins
 	}

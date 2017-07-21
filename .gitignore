@@ -50,3 +50,12 @@ high_noon/high_noon/high_noon.vcxproj
 high_noon/high_noon.VC.db
 high_noon/high_noon.sln
 high_noon/.vs/high_noon/v14/.suo
+high_noon/high_noon/Debug/vc140.pdb
+high_noon/high_noon/Debug/vc140.idb
+*.obj
+*.tlog
+*.log
+*.opendb
+*.pdb
+*.ilk
+*.exe

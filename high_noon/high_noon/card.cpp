@@ -24,7 +24,7 @@ void Card::execute_attack(int enemy_value, string enemy_suit){
 }
 
 void Card::execute_special_ability(){
-	this->special_ability;
+	this->special_ability();
 }
 
 void Card::quick_mod(){
