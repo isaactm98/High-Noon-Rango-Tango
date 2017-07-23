@@ -42,3 +42,7 @@ void Card::quick_mod(){
 	
 }
 
+void Card::print_card(){
+	cout << value << " of " << suit;
+}
+

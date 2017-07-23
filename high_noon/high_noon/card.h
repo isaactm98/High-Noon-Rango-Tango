@@ -2,6 +2,7 @@
 #define CARD_H
 #include<string>
 #include<iostream>
+#include "board.h"
 
 using namespace std;
 
@@ -15,8 +16,10 @@ public:
 	virtual bool attack(int enemy_value, string enemy_suit) = 0; 
 	void execute_attack(int enemy_value, string enemy_suit);
 	virtual void special_ability() = 0;
+	virtual void special_ability(Board* enemy_board, int row, int column) = 0;
 	void execute_special_ability();
 	void quick_mod();
+	void print_card();
 
 	string get_suit() { return suit; };
 	int get_value() { return value; }

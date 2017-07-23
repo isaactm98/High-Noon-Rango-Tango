@@ -1,7 +1,6 @@
 #include "builder.h"
 
-bool Builder::attack(int enemy_value, string enemy_suit)
-{
+bool Builder::attack(int enemy_value, string enemy_suit){
 	if (enemy_suit == "Soldier") {
 		alive = false;//builder card automatically loses against soldiers
 	}

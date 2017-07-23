@@ -146,6 +146,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="assassin.h" />
+    <ClInclude Include="black_joker.h" />
+    <ClInclude Include="board.h" />
+    <ClInclude Include="builder.h" />
+    <ClInclude Include="card.h" />
+    <ClInclude Include="sentinel.h" />
+    <ClInclude Include="soldier.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="assassin.cpp" />
+    <ClCompile Include="black_joker.cpp" />
+    <ClCompile Include="board.cpp" />
+    <ClCompile Include="builder.cpp" />
+    <ClCompile Include="card.cpp" />
+    <ClCompile Include="sentinel.cpp" />
+    <ClCompile Include="soldier.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

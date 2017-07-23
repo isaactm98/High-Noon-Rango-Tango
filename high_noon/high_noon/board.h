@@ -9,7 +9,7 @@ public:
 	Card* get_card(int row, int column);
 	void print_card(int row, int column);
 	void move_card(int initial_row, int initial_column, int final_row, int final_column);
-	void add_card(Card* card_to_add);
+	void add_card(Card* card_to_add, int row, int column);
 	void remove_card(Card* card_to_remove);
 	void print_board();
 

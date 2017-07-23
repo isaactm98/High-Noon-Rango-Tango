@@ -1,7 +1,6 @@
 #include "assassin.h"
 
-bool Assassin::attack(int enemy_value, string enemy_suit)
-{
+bool Assassin::attack(int enemy_value, string enemy_suit){
 	if (enemy_suit == "Builder") {
 		alive = false;//assassin card automatically loses against builders
 	}
