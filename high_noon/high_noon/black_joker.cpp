@@ -1,16 +1,19 @@
 #include "black_joker.h"
 
-bool BlackJoker::attack(int enemy_value, string enemy_suit){
+void BlackJoker::attack(Board * enemy_board, int row, int column){
+	Card * defending_card = enemy_board->get_card(row, column);
+	string enemy_suit = defending_card->get_suit();
+	int enemy_value = defending_card->get_value();
 	if (value >= enemy_value) {
 		if (value == enemy_value) {
 			//both died as equivalency means death for both
 			alive = false;
 		}
-		return false;
+		defending_card->set_alive(false);
 	}
 	else {
 		alive = false;//black joker card's value was lower - died
-		return true; //defending card survived
+		defending_card->set_alive(true); //defending card survived
 	}
 }
 

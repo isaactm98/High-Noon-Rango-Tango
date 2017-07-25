@@ -7,7 +7,7 @@ using namespace std;
 class Sentinel : public Card {
 
 public:
-	bool attack(int enemy_value, string enemy_suit);
+	void attack(Board * enemy_board, int row, int column);
 
 
 

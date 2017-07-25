@@ -13,10 +13,11 @@ public:
 	Card(string suit_of_card, int value_of_card);
 
 	// returns whether defender dies and set alive bool of attacker to false if necessary
-	virtual bool attack(int enemy_value, string enemy_suit) = 0; 
+	virtual void attack(int enemy_value, string enemy_suit) = 0;
 	void execute_attack(int enemy_value, string enemy_suit);
 	virtual void special_ability() = 0;
 	virtual void special_ability(Board* enemy_board, int row, int column) = 0;
+	virtual void special_abiliity(Board* enemy_board1, int row1, int column1, Board* enemy_board2, int row2, int column2) = 0;
 	void execute_special_ability();
 	void quick_mod();
 	void print_card();

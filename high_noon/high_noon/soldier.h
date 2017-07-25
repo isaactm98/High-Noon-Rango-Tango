@@ -7,8 +7,8 @@ using namespace std;
 class Soldier : public Card {
 
 public:
-	bool attack(int enemy_value, string enemy_suit);
-
+	void attack(Board * enemy_board, int row, int column);
+	void special_abiliity(Board* enemy_board1, int row1, int column1, Board* enemy_board2, int row2, int column2);
 
 
 };
