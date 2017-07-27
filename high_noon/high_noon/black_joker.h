@@ -8,7 +8,7 @@ using namespace std;
 class BlackJoker : public Card {
 public:
 	void attack(Board * enemy_board, int row, int column);
-	void special_ability(Board* enemy_board, int row, int column);
+	void special_ability(Board* enemy_board, int row, int column, Board* own_board, int row_own, int column_own);
 };
 #endif // !BLACK_JOKER_H
 
