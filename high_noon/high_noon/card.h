@@ -26,6 +26,7 @@ public:
 	int get_value() { return value; }
 	bool get_revealed() { return revealed; }
 	void set_revealed_true() { revealed = true; }
+	void set_quick_mod_true() { quick_modded = true; }
 	void set_alive(bool results_of_attack) { alive = results_of_attack; }
 
 	const int MAX_CARD_VALUE = 11;
@@ -37,6 +38,7 @@ protected:
 	bool alive;
 	string suit;
 	int value;
+	bool protected_by_sentinel;
 
 };
 #endif

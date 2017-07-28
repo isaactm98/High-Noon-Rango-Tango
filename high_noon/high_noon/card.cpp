@@ -7,6 +7,7 @@ Card::Card(){
 	quick_modded = false;
 	used_ability = false;
 	alive = false;
+	protected_by_sentinel = false;
 }
 
 Card::Card(string suit_of_card, int value_of_card){
@@ -16,6 +17,7 @@ Card::Card(string suit_of_card, int value_of_card){
 	quick_modded = false;
 	used_ability = false;
 	alive = true;
+	protected_by_sentinel = false;
 }
 
 void Card::execute_attack(int enemy_value, string enemy_suit){

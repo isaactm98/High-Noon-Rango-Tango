@@ -24,3 +24,9 @@ void Builder::attack(Board * enemy_board, int row, int column){
 		defending_card->set_alive(true); //defending card survived
 	}
 }
+
+void Builder::special_ability(Board * own_board, int row, int column){
+	Card* card_to_quick_mod = own_board->get_card(row, column);
+	card_to_quick_mod->quick_mod();
+	card_to_quick_mod->set_quick_mod_true;
+}

@@ -26,5 +26,6 @@ void Soldier::attack(Board * enemy_board, int row, int column){
 }
 
 void Soldier::special_abiliity(Board * enemy_board1, int row1, int column1, Board * enemy_board2, int row2, int column2){
-
+	attack(enemy_board1, row1, column1);
+	attack(enemy_board2, row2, column2);
 }
